@@ -18,3 +18,8 @@ Key Achievements:
 - Utilized NodeJS and ExpressJS to create a robust and scalable server-side architecture
 
 This project showcases your skills in web development, database management, and user interface design.
+#Screenshots
+
+![image alt](https://github.com/sohelkureshi/Dance-Fusion-website/blob/3226d4d56fc913dc60c2687c9d1edc9d8bf9a8cd/screenshots/Screenshot%20(10105).png)
+![image alt](https://github.com/sohelkureshi/Dance-Fusion-website/blob/3226d4d56fc913dc60c2687c9d1edc9d8bf9a8cd/screenshots/Screenshot%20(10106).png)
+![image alt](https://github.com/sohelkureshi/Dance-Fusion-website/blob/3226d4d56fc913dc60c2687c9d1edc9d8bf9a8cd/screenshots/Screenshot%20(10107).png)
