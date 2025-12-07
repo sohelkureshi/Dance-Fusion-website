@@ -2,6 +2,8 @@
 
 A modern, fully-responsive dance academy website built with Node.js + Express + Pug + CSS3. Features beautiful animations, professional blue theme, working contact form with strict validation, and mobile-first design. Perfect portfolio showcase project.
 
+View live demo:- https://dance-fusion.onrender.com/
+
 ---
 
 ## Key Features
