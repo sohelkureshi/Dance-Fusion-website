@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung|ZCOOL+QingKe+HuangYou&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+}
+
+/* Primary Blue Color Palette */
+:root {
+    --primary-blue: #2563eb;
+    --dark-blue: #1d4ed8;
+    --light-blue: #3b82f6;
+    --blue-shadow: rgba(37, 99, 235, 0.2);
+    --blue-light: #eff6ff;
+}
+
+/* Navbar - Clean Blue */
+#navbar {
+    background: var(--primary-blue);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px var(--blue-shadow);
+    font-family: 'Yeon Sung', cursive;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+.logo-tagline {
+    font-size: 14px;
+    opacity: 0.9;
+    display: block;
+    margin-top: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+/* Hero Section - Blue Theme */
+#introSection {
+    min-height: 100vh;
+    background: linear-gradient(var(--primary-blue), var(--dark-blue)), 
+                url("/static/bg.jpg") center/cover no-repeat;
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.intro-wrapper {
+    max-width: 800px;
+}
+
+.intro-text h1 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.intro-subtitle {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+    opacity: 0.95;
+}
+
+.intro-line {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.intro-cta, .cta-button {
+    display: inline-block;
+    background: white;
+    color: var(--primary-blue);
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px var(--blue-shadow);
+}
+
+.intro-cta:hover, .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--blue-shadow);
+}
+
+/* Section Common Styles */
+section {
+    padding: 5rem 2rem;
+}
+
+.section-title {
+    font-family: 'Yeon Sung', cursive;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-blue);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 4rem;
+    color: #666;
+}
+
+/* Cards Grid - Clean Blue Accents */
+#missionSection, #programsSection {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cards, .program-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card, .program-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+}
+
+.card:hover, .program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px var(--blue-shadow);
+    border-top-color: var(--primary-blue);
+}
+
+.card h3, .program-card h3 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.card-content p, .program-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.program-detail {
+    background: var(--blue-light);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    border-left: 4px solid var(--primary-blue);
+}
+
+/* Sponsors Section - Light Blue */
+#sponsorsSection {
+    background: var(--blue-light);
+    text-align: center;
+}
+
+#sponsors {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.spImage {
+    height: 100px;
+    width: auto;
+    filter: grayscale(20%);
+    transition: all 0.3s ease;
+}
+
+.spImage:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* CTA Section - Blue Theme */
+#ctaSection {
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+}
+
+.cta-box {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-box h2 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.cta-box p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer - Dark Blue */
+#footer {
+    background: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Yeon Sung', cursive;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-links a {
+        font-size: 20px;
+        padding: 0.3rem 0.8rem;
+    }
+    
+    .cards, .program-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        padding: 1rem;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

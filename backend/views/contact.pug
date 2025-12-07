@@ -1,0 +1,63 @@
+extends base.pug
+
+block scripts
+  script(src="/assets/js/index.js")
+
+block style
+  link(rel="stylesheet", href="/assets/styles/style.css")
+  link(rel="stylesheet", href="/assets/styles/styleContact.css")
+
+block content
+  // Contact Hero Section
+  section#contactHero
+    div.hero-content
+      h1.section-title Contact Us
+      p.section-subtitle Ready to join our dance classes? Send us a message and we'll get back to you within 24 hours.
+
+  // Contact Form Section
+  section#contactFormSection
+    div.container-contact
+      div.form-wrapper
+        h2 Let's Connect
+        p.fill-details Fill out the form below and our team will contact you to discuss batch timings and trial classes.
+        
+        form.myForm(action="/contact", method="post")
+          div.form-group
+            input.myInput(type="text", name="name", placeholder="Your Full Name", required)
+            label Name *
+          
+          div.form-group
+            input.myInput(type="tel", name="phone", placeholder="Phone Number", required)
+            label Phone *
+          
+          div.form-group
+            input.myInput(type="email", name="email", placeholder="Email Address", required)
+            label Email *
+          
+          div.form-group
+            input.myInput(type="text", name="address", placeholder="Your Location/City")
+            label Location
+          
+          div.form-group.full-width
+            textarea.myTextarea(name="desc", placeholder="Tell us about your dance goals or questions...", rows="5")
+            label Your Message
+          
+          button.btn Submit Inquiry
+
+  // Contact Info Section
+  section#contactInfo
+    div.contact-details
+      div.detail-card
+        h3 Dance Studio Location
+        p Near City Center Mall, Main Road
+        p Nagpur, Maharashtra
+        
+      div.detail-card
+        h3 Class Timings
+        p Monday - Saturday: 4 PM - 9 PM
+        p Sunday: Closed
+        
+      div.detail-card
+        h3 Quick Contact
+        p Phone: +91 98765 43210
+        p Email: info@uselessdance.com

@@ -1,0 +1,66 @@
+extends base.pug
+
+block scripts
+  script(src="/assets/js/index.js")
+
+block style
+  link(rel="stylesheet", href="/assets/styles/style.css")
+  link(rel="stylesheet", href="/assets/styles/styleAbout.css")
+
+block content
+  // About Hero Section
+  section#aboutHero
+    div.hero-content
+      h1.section-title About Useless Dance Academy
+      p.section-subtitle Discover our story and what makes us different in dance training.
+
+  // Academy Story
+  section#storySection
+    div.container-about
+      div.story-content
+        h2 Our Dance Story
+        p.lead-text Useless Dance Academy blends traditional Indian dance forms with modern contemporary styles. We create a welcoming space where beginners and professionals discover their unique dance expression.
+        p Dance classes designed for all ages and skill levels. From classical precision to street dance energy, we help everyone find their rhythm and build confidence.
+
+  // What We Offer
+  section#offerSection
+    div.offer-wrapper
+      h2.section-title What We Teach
+      div.offer-features
+        div.feature
+          h3 Perfect Technique
+          p Master clean steps and body control through structured daily practice.
+        div.feature
+          h3 Style Development
+          p Learn trending choreography and create your personal dance signature.
+        div.feature
+          h3 Stage Performance
+          p Get ready for college fests, competitions, weddings, and live events.
+
+  // Training Philosophy
+  section#philosophySection
+    div.philosophy-wrapper
+      h2.section-title Our Training Approach
+      div.philosophy-content
+        div.philosophy-text
+          p We break complex dance moves into simple, achievable steps. Every class focuses on building real confidence through repetition and clear guidance.
+          p Small group sizes ensure personal attention. Progress at your own pace with trainers who understand different learning styles.
+        div.philosophy-highlight
+          p "Dance transforms your body into a storytelling tool. Feel the music. Move with purpose. Express without fear."
+          p.quote-author - Useless Dance Academy Team
+
+  // Academy Stats
+  section#statsSection
+    div.stats-grid
+      div.stat-item
+        h3 2000+
+        p Students Trained
+      div.stat-item
+        h3 50+
+        p Events Covered
+      div.stat-item
+        h3 10+
+        p Years Active
+      div.stat-item
+        h3 100%
+        p Satisfaction Rate

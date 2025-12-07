@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Useless Dance Academy
+
+    // Main styles for the whole site
+    block style
+      link(rel="stylesheet", href="/assets/styles/style.css")
+
+  body
+    // Navbar
+    nav#navbar
+      div.nav-container
+        a#logo(href="/")
+          span.logo-text Useless Dance Academy
+          span.logo-tagline Learn. Grow. Perform.
+        ul.nav-links
+          li
+            a(href="/") Home
+          li
+            a(href="/about") About
+          li
+            a(href="/contact") Contact Us
+
+    // Main page content
+    main
+      block content
+
+    // Footer
+    footer#footer
+      div.footer-content
+        p Copyright © 2024 UselessDanceAcademy.com | All rights reserved
+        p Crafted with passion for dance and learning.
+
+    // Scripts for the whole site
+    block scripts
+      script(src="/assets/js/index.js")

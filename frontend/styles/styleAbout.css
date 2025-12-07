@@ -1,0 +1,284 @@
+/* ========================================
+   UPDATED ABOUT PAGE STYLES - HERO FIXED
+   Beautiful Pattern Background - Copy to styleAbout.css
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Yeon+Sung|ZCOOL+QingKe+HuangYou&display=swap');
+
+/* About Hero - NEW BEAUTIFUL DESIGN */
+#aboutHero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 2rem;
+}
+
+#aboutHero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(37,99,235,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(59,130,246,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(37,99,235,0.05) 0%, transparent 50%);
+    animation: subtleGlow 15s ease-in-out infinite;
+}
+
+@keyframes subtleGlow {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+#aboutHero .section-title {
+    font-family: 'Yeon Sung', cursive;
+    font-size: clamp(4rem, 9vw, 6.5rem);
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 10px rgba(37,99,235,0.2);
+}
+
+#aboutHero .section-subtitle {
+    font-size: 2.2rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Story Section */
+#storySection {
+    padding: 7rem 2rem;
+    background: white;
+}
+
+.container-about {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.story-content h2 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 4.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 2.5rem;
+}
+
+.lead-text {
+    font-size: 1.9rem;
+    color: #475569;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+/* Offer Section */
+#offerSection {
+    padding: 7rem 2rem;
+    background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+}
+
+.offer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.offer-wrapper .section-title {
+    font-size: 4.5rem;
+    margin-bottom: 4rem;
+}
+
+.offer-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature {
+    background: white;
+    padding: 3.5rem 3rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+    border-top: 6px solid var(--primary-blue);
+    transition: all 0.4s ease;
+}
+
+.feature:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 40px 100px rgba(37,99,235,0.15);
+}
+
+.feature h3 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.8rem;
+}
+
+.feature p {
+    font-size: 1.4rem;
+    color: #64748b;
+    line-height: 1.8;
+}
+
+/* Philosophy Section */
+#philosophySection {
+    padding: 7rem 2rem;
+    background: white;
+}
+
+.philosophy-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.philosophy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+}
+
+.philosophy-wrapper .section-title {
+    font-size: 4.5rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.philosophy-text {
+    text-align: left;
+}
+
+.philosophy-text p {
+    font-size: 1.6rem;
+    color: #475569;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.philosophy-highlight {
+    background: linear-gradient(135deg, var(--blue-light), #e0f2fe);
+    padding: 4rem;
+    border-radius: 30px;
+    box-shadow: 0 25px 70px rgba(37,99,235,0.1);
+    text-align: center;
+    border: 2px solid rgba(37,99,235,0.1);
+}
+
+.philosophy-highlight p {
+    font-size: 1.7rem;
+    color: #475569;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.quote-author {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+/* Stats Section */
+#statsSection {
+    padding: 8rem 2rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#statsSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(255,255,255,0.15) 0%, transparent 50%);
+}
+
+.stats-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 4rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.stat-item h3 {
+    font-family: 'Yeon Sung', cursive;
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 1.2rem;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.stat-item p {
+    font-size: 1.6rem;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .philosophy-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .philosophy-wrapper .section-title {
+        text-align: center;
+    }
+    
+    #aboutHero, #storySection, #offerSection, #philosophySection, #statsSection {
+        padding: 5rem 1rem;
+    }
+    
+    .story-content h2, .philosophy-wrapper .section-title {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .story-content h2, .philosophy-wrapper .section-title {
+        font-size: 3.2rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 3.5rem;
+    }
+    
+    .feature {
+        padding: 3rem 2.5rem;
+    }
+    
+    .philosophy-highlight {
+        padding: 3rem 2.5rem;
+    }
+}

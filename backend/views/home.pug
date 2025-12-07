@@ -1,0 +1,82 @@
+extends base.pug
+
+block scripts
+  script(src="/assets/js/index.js")
+
+block style
+  link(rel="stylesheet", href="/assets/styles/style.css")
+
+block content
+  // Intro / Hero Section
+  section#introSection
+    div.intro-wrapper
+      div.intro-text
+        h1 Welcome to Useless Dance Academy
+        p.intro-subtitle A friendly place to learn dance with confidence and enjoy every step.
+        p.intro-line Eat. Sleep. Dance. Repeat.
+        a.intro-cta(href="/contact") Join Our Next Batch
+      div.intro-highlight
+        p We help beginners and advanced dancers improve their moves with simple training plans and clear guidance.
+
+  // Mission Section
+  section#missionSection
+    h2.section-title Our Mission
+    p.section-subtitle We want every student to feel confident, creative, and free on the dance floor.
+
+    div.cards
+      div.card
+        h3 Dance Perfection
+        div.card-box
+          div.card-content
+            p We focus on basics, body control, and clean steps so that your dance looks smooth and powerful.
+
+      div.card
+        h3 Dance Your Own Style
+        div.card-box
+          div.card-content
+            p You can learn trending choreographies and also create your own style with our support.
+
+      div.card
+        h3 Expert Guidance
+        div.card-box
+          div.card-content
+            p Learn from experienced trainers who break every step into very simple actions you can follow.
+
+  // Programs / Classes Section
+  section#programsSection
+    h2.section-title Our Dance Programs
+    p.section-subtitle Flexible batches for school students, college students, and working professionals.
+
+    div.program-list
+      div.program-card
+        h3 Beginner Batch
+        p For students who are new to dance and want to build strong basics with simple routines.
+        p.program-detail 3 days a week • Small groups • Personal attention
+
+      div.program-card
+        h3 Intermediate Batch
+        p For dancers who know the basics and want to improve speed, expressions, and stage presence.
+        p.program-detail 4 days a week • Performance focus
+
+      div.program-card
+        h3 Wedding & Event Choreo
+        p Special choreography for weddings, college events, and group performances.
+        p.program-detail Custom songs • Practice support
+
+  // Sponsors Section
+  section#sponsorsSection
+    h2.section-title Our Supporters
+    p.section-subtitle These brands and partners support our events, workshops, and annual shows.
+
+    div#sponsors
+      img.spImage(src="/static/img/logo1.png", alt="Sponsor 1")
+      img.spImage(src="/static/img/logo2.png", alt="Sponsor 2")
+      img.spImage(src="/static/img/logo3.png", alt="Sponsor 3")
+      img.spImage(src="/static/img/logo4.png", alt="Sponsor 4")
+
+  // Call To Action Section
+  section#ctaSection
+    div.cta-box
+      h2 Ready To Start Dancing?
+      p Drop a message on our Contact page and we will help you join the right batch for your level.
+      a.cta-button(href="/contact") Book a Free Trial Class
